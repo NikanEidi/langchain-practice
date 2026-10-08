@@ -24,5 +24,6 @@ langchain-practice/
 | 1 | First model call | [`code/01_first_call.py`](code/01_first_call.py) | [`notes/01-first-call.md`](notes/01-first-call.md) |
 | 2 | System prompt | [`code/02_system_prompt.py`](code/02_system_prompt.py) | [`notes/02-system-prompt.md`](notes/02-system-prompt.md) |
 | 3 | Tool calling (single round) | [`code/03_tool_calling.py`](code/03_tool_calling.py) | [`notes/03-tool-calling.md`](notes/03-tool-calling.md) |
+| 4 | Real agent loop (multi-step, multi-tool) | [`code/04_agent_loop.py`](code/04_agent_loop.py) | [`notes/04-agent-loop.md`](notes/04-agent-loop.md) |
 
-More parts get added as we go: a multi-step agent loop, then a real project (a Code Review Agent).
+More parts get added as we go: a real project (a Code Review Agent), then RAG and LangGraph.
