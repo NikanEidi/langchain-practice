@@ -26,7 +26,8 @@ langchain-practice/
 | 3 | Tool calling (single round) | [`code/03_tool_calling.py`](code/03_tool_calling.py) | [`notes/03-tool-calling.md`](notes/03-tool-calling.md) |
 | 4 | Real agent loop (multi-step, multi-tool) | [`code/04_agent_loop.py`](code/04_agent_loop.py) | [`notes/04-agent-loop.md`](notes/04-agent-loop.md) |
 | 5 | Embeddings | [`code/05_embeddings.py`](code/05_embeddings.py) | [`notes/05-embeddings.md`](notes/05-embeddings.md) |
+| 6 | Vector store and retrieval | [`code/06_vector_store.py`](code/06_vector_store.py) | [`notes/06-vector-store.md`](notes/06-vector-store.md) |
 
 **Real project built from this practice:** [code-review-agent](https://github.com/NikanEidi/code-review-agent) — a LangChain agent using real tools (`ruff`, `ast`) to review Python files.
 
-More parts get added as we go: retrieval (RAG), then LangGraph.
+More parts get added as we go: full RAG (retrieval + generation combined), then LangGraph.
