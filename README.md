@@ -25,5 +25,8 @@ langchain-practice/
 | 2 | System prompt | [`code/02_system_prompt.py`](code/02_system_prompt.py) | [`notes/02-system-prompt.md`](notes/02-system-prompt.md) |
 | 3 | Tool calling (single round) | [`code/03_tool_calling.py`](code/03_tool_calling.py) | [`notes/03-tool-calling.md`](notes/03-tool-calling.md) |
 | 4 | Real agent loop (multi-step, multi-tool) | [`code/04_agent_loop.py`](code/04_agent_loop.py) | [`notes/04-agent-loop.md`](notes/04-agent-loop.md) |
+| 5 | Embeddings | [`code/05_embeddings.py`](code/05_embeddings.py) | [`notes/05-embeddings.md`](notes/05-embeddings.md) |
 
-More parts get added as we go: a real project (a Code Review Agent), then RAG and LangGraph.
+**Real project built from this practice:** [code-review-agent](https://github.com/NikanEidi/code-review-agent) — a LangChain agent using real tools (`ruff`, `ast`) to review Python files.
+
+More parts get added as we go: retrieval (RAG), then LangGraph.
