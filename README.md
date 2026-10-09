@@ -28,7 +28,10 @@ langchain-practice/
 | 5 | Embeddings | [`code/05_embeddings.py`](code/05_embeddings.py) | [`notes/05-embeddings.md`](notes/05-embeddings.md) |
 | 6 | Vector store and retrieval | [`code/06_vector_store.py`](code/06_vector_store.py) | [`notes/06-vector-store.md`](notes/06-vector-store.md) |
 | 7 | Full RAG (retrieval + generation) | [`code/07_rag.py`](code/07_rag.py) | [`notes/07-rag.md`](notes/07-rag.md) |
+| 8 | LangGraph (same agent as a graph) | [`code/08_langgraph.py`](code/08_langgraph.py) | [`notes/08-langgraph.md`](notes/08-langgraph.md) |
 
 **Real project built from this practice:** [code-review-agent](https://github.com/NikanEidi/code-review-agent) — a LangChain agent using real tools (`ruff`, `ast`) to review Python files.
+
+This completes the planned path: model calls → tools → a real agent loop → embeddings → retrieval → full RAG → LangGraph.
 
 More parts get added as we go: full RAG (retrieval + generation combined), then LangGraph.
