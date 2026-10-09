@@ -80,6 +80,23 @@ Retrieval was correct both times (verified in Part 6 — the right document was 
 
 None of these are LangChain-specific — this is general prompt engineering, and it mattered more here than any code change would have.
 
+## Stability check: 8 runs of the fixed prompt
+
+Ran the fixed (strict) prompt 8 times in a row, same question, same context, nothing else changed:
+
+```
+Kubernetes.
+Kubernetes.
+Container orchestration tool.
+Kubernetes.
+Kubernetes.
+Kubernetes.
+Kubernetes.
+Kubernetes.
+```
+
+7/8 exact match, 1/8 a paraphrase ("Container orchestration tool" — a direct restatement of "orchestrates containers" from the context, not new information). **Zero hallucinations across all 8 runs.** The wording varies run to run (expected — this is the same temperature-driven sampling covered in Part 1/2), but the fix held: every answer stayed grounded in the retrieved context, none reached for outside knowledge again. This is the meaningful distinction — variation in *phrasing* is normal and harmless; variation in *actual content* (the earlier Docker/Podman hallucination) is the failure mode that mattered, and the stricter prompt eliminated it, not just reduced its frequency once.
+
 ## The real lesson: RAG does not guarantee correctness
 
 Giving a model the right context is necessary but **not sufficient**. The model still has to (a) actually read and prioritize that context over its own training, and (b) follow the instruction to stay within it. Both can fail independently, especially on smaller models. This is a genuine, well-known limitation — not something unique to this toy example — and it's exactly why production RAG systems add things like output validation, citation-checking, or simply using a more capable model for the generation step.
